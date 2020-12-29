@@ -1,0 +1,10 @@
+/* eslint-disable jsdoc/require-file-overview */
+module.exports = {
+  printWidth: 80,
+  trailingComma: 'all',
+  tabWidth: 2,
+  semi: false,
+  arrowParens: 'always',
+  singleQuote: true,
+  jsxSingleQuote: false,
+}
