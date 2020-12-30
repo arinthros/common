@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/require-file-overview */
 module.exports = {
-  extends: ['./src/config/eslint'],
+  extends: ['./src/eslint.js'],
   ignorePatterns: [
     '**/node_modules/**',
     '**/publish',
