@@ -11,9 +11,8 @@ const { execSync } = require('child_process')
 
 // eslint-disable-next-line no-console
 console.log('[0/4] Cleaning up untracked files...')
-execSync(
-  `${
-    process.platform === 'win32' ? 'del /Q' : 'rm -rf'
-  } node_modules && yarn install`,
-  { stdio: 'inherit' },
-)
+
+const rmCommand = process.platform === 'win32' ? 'rmdir /Q /S' : 'rm -rf'
+execSync(`${rmCommand} node_modules && ${rmCommand} publish && yarn install`, {
+  stdio: 'inherit',
+})
