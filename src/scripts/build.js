@@ -3,6 +3,7 @@
  * @module build
  */
 
+const fs = require('fs')
 const { execSync } = require('child_process')
 const { writePackageJson } = require('./write-package-json')
 
@@ -17,3 +18,7 @@ writePackageJson({
     publish: `${process.cwd()}/publish`,
   },
 })
+
+if (fs.existsSync('README.md')) {
+  fs.copyFileSync('README.md', 'publish/README.md')
+}
