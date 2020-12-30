@@ -18,8 +18,8 @@ Example usage:
 // package.json
 
 "scripts" {
-  "build": "@arinthros/common build",
-  "reinstall": "@arinthros/common reinstall"
+  "build": "arinthros-common build",
+  "reinstall": "arinthros-common reinstall"
 }
 ```
 

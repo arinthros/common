@@ -1,13 +1,13 @@
 {
   "name": "@arinthros/common",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Common scripts and configs for my projects.",
   "main": "index.js",
   "repository": "https://github.com/arinthros/common",
   "author": "Bryson Hotopp",
   "license": "ISC",
   "bin": {
-    "@arinthros/common": "index.js"
+    "arinthros-common": "index.js"
   },
   "scripts": {
     "build": "node src build",
