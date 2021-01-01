@@ -25,7 +25,7 @@ Example usage:
 
 ### Build
 
-Compiles a package with Babel.
+Compiles a package with Babel. "Optional" Babel peer dependencies are required for this script to work.
 
 ### Reinstall
 
