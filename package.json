@@ -12,7 +12,8 @@
   "scripts": {
     "build": "node src build",
     "lint": "eslint ./src/ --ext .js,.jsx --fix",
-    "reinstall": "node src reinstall"
+    "reinstall": "node src reinstall",
+    "deving": "node ./src/scripts/deving.js --npm"
   },
   "dependencies": {
     "@babel/cli": "^7.12.10",
