@@ -16,6 +16,7 @@
     "deving": "node ./src/scripts/deving.js --npm"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "cross-spawn": "^7.0.3",
     "eslint": "^7.0.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -46,7 +47,6 @@
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-export-extensions": "^6.22.0"
@@ -63,7 +63,6 @@
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-transform-export-extensions": "^6.22.0"
@@ -80,7 +79,6 @@
     "@babel/plugin-transform-runtime": {"optional": true},
     "@babel/preset-env": {"optional": true},
     "@babel/preset-react": {"optional": true},
-    "babel-eslint": {"optional": true},
     "babel-jest": {"optional": true},
     "babel-plugin-module-resolver": {"optional": true},
     "babel-plugin-transform-export-extensions": {"optional": true}
