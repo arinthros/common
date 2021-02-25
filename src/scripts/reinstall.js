@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env node
 /**
  * Clean up untracked files and reinstall dependencies.
  *

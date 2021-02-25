@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/require-file-overview */
 module.exports = {
-  extends: ['prettier/react', 'plugin:react/recommended'],
+  extends: ['plugin:react/recommended'],
   env: {
     browser: true,
   },
