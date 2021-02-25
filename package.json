@@ -12,7 +12,9 @@
   "scripts": {
     "lint": "eslint ./src/ --ext .js,.jsx --fix",
     "reinstall": "node src reinstall",
-    "deving": "node ./src/scripts/deving.js --npm"
+    "build": "node src build",
+    "deving": "node ./src/scripts/deving.js --npm",
+    "prepack": "yarn build"
   },
   "dependencies": {
     "cross-spawn": "7.0.3",
