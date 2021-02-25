@@ -6,9 +6,21 @@ A set of common scripts and configurations for JavaScript projects. Inspired by 
 
 ### ESLint
 
+**.eslintrc.js**
+
+```js
+module.exports = {
+  extends: ['./node_modules/@arinthros/common/eslint.js'],
+}
+```
+
 ### Prettier
 
-### Babel
+**.prettierrc.js**
+
+```js
+module.exports = require('@arinthros/common/prettier')
+```
 
 ## Scripts
 
@@ -18,18 +30,14 @@ Example usage:
 // package.json
 
 "scripts" {
-  "build": "arinthros-common build",
   "reinstall": "arinthros-common reinstall"
 }
 ```
-
-### Build
-
-Compiles a package with Babel. "Optional" Babel peer dependencies are required for this script to work.
 
 ### Reinstall
 
 Deletes untracked folders like `node_modules` then runs a fresh dependency install.
 
-TODO: support `--yarn` or `--npm` flags, defaults to yarn.
+Supports `--yarn` or `--npm` flags, defaults to yarn.
+
 TODO: support a list of additional paths to clear
