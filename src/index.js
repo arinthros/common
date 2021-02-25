@@ -40,7 +40,7 @@ function spawnScript() {
   // get all the arguments of the script and find the position of our script commands
   const args = process.argv.slice(2)
   const scriptIndex = args.findIndex((x) =>
-    ['build', 'reinstall', 'lint', 'test', 'validate'].includes(x),
+    ['reinstall', 'lint', 'test', 'validate'].includes(x),
   )
 
   // Extract the node arguments so we can pass them to node later on
