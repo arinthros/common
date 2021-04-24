@@ -1,6 +1,6 @@
 {
   "name": "@arinthros/common",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "description": "Common scripts and configs for my projects.",
   "main": "index.js",
   "repository": "https://github.com/arinthros/common",
@@ -13,9 +13,7 @@
     "lint": "eslint ./src/ --ext .js,.jsx --fix",
     "reinstall": "node src reinstall",
     "build": "node src build",
-    "deving": "node ./src/scripts/deving.js --npm",
-    "publish": "yarn build && lerna publish --contents publish",
-    "publish:alpha": "yarn run publish --dist-tag next"
+    "deving": "node ./src/scripts/deving.js --npm"
   },
   "dependencies": {
     "cross-spawn": "7.0.3",
@@ -36,8 +34,5 @@
     "fs-extra": "9.1.0",
     "prettier": "2.2.1",
     "typescript": "4.2.2"
-  },
-  "devDependencies": {
-    "lerna": "4.0.0"
   }
 }
