@@ -10,7 +10,7 @@ A set of common scripts and configurations for JavaScript projects. Inspired by 
 
 ```js
 module.exports = {
-  extends: ['./node_modules/@arinthros/common/eslint.js'],
+  extends: ['@arinthros/common/eslint'],
 }
 ```
 
@@ -20,6 +20,13 @@ module.exports = {
 
 ```js
 module.exports = require('@arinthros/common/prettier')
+
+// To add your own custom rules:
+module.exports = {
+  ...require('@arinthros/common/prettier'),
+  // Put your own rule preferences here.
+}
+
 ```
 
 ## Scripts
