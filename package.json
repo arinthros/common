@@ -10,8 +10,8 @@
     "arinthros-common": "index.js"
   },
   "scripts": {
-    "lint": "eslint ./src/ --ext .js,.jsx --fix",
-    "lint:ci": "eslint ./src/ --ext .js,.jsx --quiet",
+    "lint": "eslint ./src/ --ext .js,.jsx",
+    "lint:ci": "yarn lint --quiet",
     "reinstall": "node src reinstall",
     "build": "node src build",
     "deving": "node ./src/scripts/deving.js --npm",
