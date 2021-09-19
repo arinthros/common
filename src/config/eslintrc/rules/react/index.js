@@ -1,25 +1,7 @@
 /* eslint-disable jsdoc/require-file-overview */
+const path = require('path')
+
 module.exports = {
-  extends: ['plugin:react/recommended'],
-  env: {
-    browser: true,
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+  extends: [path.join(__dirname, './cra-no-conflict.js')],
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
-  rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'react/jsx-boolean-value': ['warn', 'always'],
-    'react/jsx-props-no-spreading': 'warn',
-    'react-hooks/exhaustive-deps': 'warn',
-    'react-hooks/rules-of-hooks': 'error',
-  },
 }

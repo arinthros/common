@@ -5,9 +5,9 @@ module.exports = {
   extends: [
     path.join(__dirname, './base.js'),
     path.join(__dirname, './rules/cypress/index.js'),
-    path.join(__dirname, './rules/import/index.js'),
-    path.join(__dirname, './rules/jest/index.js'),
+    path.join(__dirname, './rules/import/cra-no-conflict.js'),
+    path.join(__dirname, './rules/jest/cra-no-conflict.js'),
     path.join(__dirname, './rules/jsdoc/index.js'),
-    path.join(__dirname, './rules/react/index.js'),
+    path.join(__dirname, './rules/react/cra-no-conflict.js'),
   ],
 }

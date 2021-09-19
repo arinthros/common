@@ -37,7 +37,7 @@ function handleSignal(result) {
 }
 
 function spawnScript() {
-  // get all the arguments of the script and find the position of our script commands
+  // Get all the arguments of the script and find the position of our script commands
   const args = process.argv.slice(2)
   const scriptIndex = args.findIndex((x) =>
     ['build', 'reinstall', 'lint', 'test', 'validate'].includes(x),

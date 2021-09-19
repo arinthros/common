@@ -25,7 +25,9 @@ module.exports = {
     'jsdoc/require-description': 'warn',
     'jsdoc/require-description-complete-sentence': [
       'warn',
-      { tags: ['see', 'copyright', 'deprecated'] },
+      {
+        tags: ['see', 'copyright', 'deprecated'],
+      },
     ],
     'jsdoc/require-example': [
       'off', // Disabling for now because it adds empty @example tags to all functions, breaking doc generation
