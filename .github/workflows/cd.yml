@@ -17,7 +17,7 @@ jobs:
         registry-url: https://registry.npmjs.org
     - run: yarn install --frozen-lockfile
     - run: git config --global user.name "GitHub workflow bot"
-    - run: git config --global "github-workflow@example.com"
+    - run: git config --global user.email "github-workflow@arinthros.com"
     - run: yarn version ${{ github.event.release.tag_name }}
     - run: yarn build
     - run: yarn publish --access public publish
