@@ -13,7 +13,7 @@ const path = require('path')
 // eslint-disable-next-line no-console
 console.log('Building the package...')
 
-const publishPath = path.join(process.cwd(), 'publish')
+const publishPath = path.join(process.cwd(), 'build')
 
 fs.removeSync(publishPath)
 fs.mkdirSync(publishPath)
