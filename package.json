@@ -14,8 +14,7 @@
     "lint:ci": "yarn lint --quiet",
     "reinstall": "node src reinstall",
     "build": "node src build",
-    "deving": "node ./src/scripts/deving.js --npm",
-    "prepack": "yarn build"
+    "deving": "node ./src/scripts/deving.js --npm"
   },
   "dependencies": {
     "cross-spawn": "7.0.3",
