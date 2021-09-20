@@ -18,7 +18,7 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: git config --global user.name "GitHub workflow bot"
     - run: git config --global user.email "github-workflow@arinthros.com"
-    - run: yarn --new-version ${{ github.event.release.tag_name }} # TODO: change flag with yarn 2
+    - run: yarn version --new-version ${{ github.event.release.tag_name }} # TODO: change flag with yarn 2
     - run: yarn build
     - run: npm publish build --access public
       env:
